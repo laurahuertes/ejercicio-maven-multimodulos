@@ -1,16 +1,7 @@
 import java.util.Scanner;
 
 public class ReadWrite {
-    private double[] nums;
     private String operation;
-
-    public double[] getNums() {
-        return this.nums;
-    }
-
-    public void setNums(double[] nums) {
-        System.arraycopy(nums, 0, this.nums, 0, nums.length);
-    }
 
     public String getOperation() {
         return this.operation;
@@ -22,6 +13,7 @@ public class ReadWrite {
 
     public double[] readConsole() {
         Scanner scanner = new Scanner(System.in);
+        double[] nums = new double[2];
         System.out.print("Introduce el primer número: ");
         nums[0] = scanner.nextDouble();
 
